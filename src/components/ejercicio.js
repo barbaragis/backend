@@ -1,6 +1,6 @@
 import { promises as fs } from "fs"
 
-class ProductManager {
+export default class ProductManager {
 
     constructor() {
         this.path = "./products.txt";
@@ -67,18 +67,25 @@ class ProductManager {
 
 
 
-const productos = new ProductManager();
+const productos = new ProductManager()
 
-
-/* productos.deleteProductosById(2); */
-
- 
-/* productos.addProduct('Producto 1' , 'description 1' , 500 , "imagen1.jpg" , "123" , 10)
+/*  
+productos.addProduct('Producto 1' , 'description 1' , 500 , "imagen1.jpg" , "123" , 10)
 productos.addProduct('Producto 2' , 'description 2' , 555 , "imagen2.jpg" , "124" , 9)
-productos.addProduct('Producto 3' , 'description 3' , 400 , "imagen3.jpg" , "111" , 2)  */
+productos.addProduct('Producto 3' , 'description 3' , 96500 , "imagen3.jpg" , "1671" , 2)
+productos.addProduct('Producto 4' , 'description 4' , 700 , "imagen4.jpg" , "112" , 2)
+productos.addProduct('Producto 5' , 'description 5' , 4500 , "imagen5.jpg" , "1171" , 2)
+productos.addProduct('Producto 6' , 'description 5' , 4500 , "imagen6.jpg" , "1181" , 2)
+productos.addProduct('Producto 7' , 'description 6' , 45900 , "imagen7.jpg" , "1141" , 2)
+productos.addProduct('Producto 8' , 'description 7' , 4060 , "imagen9.jpg" , "12" , 2)
+productos.addProduct('Producto 9' , 'description 8' , 400 , "imagen9.jpg" , "118" , 2)
+productos.addProduct('Producto 10' , 'description 9' , 400 , "imagen10.jpg" , "161" , 2)  */
 
-/* //llama por id 
-productos.getProductsById(2) */
+productos.getProducts()
+
+/*
+ //llama por id
+productos.getProductsById(2)
 
 //actualizar datos de producto
 productos.updateProducts({
@@ -90,3 +97,4 @@ productos.updateProducts({
         code: '123',
         stock: 10
 }) 
+ */
